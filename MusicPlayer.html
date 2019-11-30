@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" http-equiv="imagetoolbar" content="no" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicPlayer.css" media="all">
+    <body style="background-color: mintcream;" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
+
+        <div id="myPlayer" class="musicBox">
+            <audio class="audio" src="get-up-stand-up.mp3" ></audio>
+
+            <div id="controls" class="optionsBox" >
+                <h2 style="text-align: center;" >Get Up! Stand Up!</h2>
+                <a class="myButton play">[ PLAY ]</a>
+                <a class="myButton pause">[ PAUSE ]</a>
+                <a class="myButton next">[ +10 ]</a>
+                <a class="myButton prev">[ -10 ]</a>
+            </div>
+
+        </div>
+        <div onclick="repos(event)" id="progressBar" class="progressBar">
+            <div  ></div>
+        </div>
+
+    </body>
+    <script src="musicPlayer.js" ></script>
+</html>
